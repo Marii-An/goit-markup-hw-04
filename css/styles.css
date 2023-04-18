@@ -257,6 +257,18 @@ body {
   flex-basis: calc((100% - 72px) / 4);
 }
 
+.rectangle {
+  width: 264px;
+  height: 112px;
+  left: 0px;
+  top: 0px;
+  background: #f4f4fd;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
 /*===================== /IDEA=============*/
 
 /*================ WHAT R WE DOING=======*/
@@ -330,6 +342,53 @@ body {
 }
 
 /*================/TEAM=================*/
+/*============== CUSTOMERS=============*/
+
+.customers-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.clients-list-cards {
+  box-sizing: border-box;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.clients-list-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-list-cards:hover,
+.clients-list-cards:focus {
+  border: 1px solid #404bbf;
+}
+
+.clients-list-icon {
+  fill: #8e8f99;
+}
+.clients-list-icon:hover,
+.clients-list-icon:focus {
+  fill: #404bbf;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.clients-list-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*============== /CUSTOMERS=============*/
 
 /*===================FOOTER=============*/
 
@@ -372,6 +431,10 @@ body {
   border-radius: 50%;
   background-color: #4d5ae5;
 }
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  background-color: #31d0aa;
+}
 
 /*===================FOOTER=================*/
 /*=================PORTFOLIO============*/
@@ -393,7 +456,11 @@ body {
 .modal-btns:hover,
 .modal-btns:focus {
   background: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
+
 .text-btns {
   display: flex;
   justify-content: center;
@@ -443,4 +510,12 @@ body {
   padding-top: 32px;
   padding-right: 16px;
   padding-left: 16px;
+}
+
+.offer-card:focus,
+.offer-card:hover {
+  background: #ffffff;
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
