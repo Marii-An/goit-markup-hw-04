@@ -116,6 +116,8 @@ body {
 .top-line {
   background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .top-line-container {
@@ -237,6 +239,8 @@ body {
 .hero-container {
   display: block;
   align-items: center;
+  max-width: 1440px;
+  background-size: cover;
 }
 
 /*====================== /HERO =========*/
@@ -296,19 +300,22 @@ body {
 
 .card {
   background-color: #ffffff;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .employees-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+}
+
+.employee-card {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .employee-card {
@@ -337,10 +344,6 @@ body {
   background-color: #404bbf;
 }
 
-.social-list-icon: {
-  fill: #f4f4fd;
-}
-
 /*================/TEAM=================*/
 /*============== CUSTOMERS=============*/
 
@@ -349,30 +352,37 @@ body {
   padding-bottom: 120px;
 }
 
+.customer-title {
+  line-height: 1.1;
+}
+
+.clients-list {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
 .clients-list-cards {
   box-sizing: border-box;
   width: 168px;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-}
-.clients-list-cards {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #8e8f99;
 }
 
 .clients-list-cards:hover,
 .clients-list-cards:focus {
   border: 1px solid #404bbf;
+  color: #404bbf;
 }
 
 .clients-list-icon {
-  fill: #8e8f99;
-}
-.clients-list-icon:hover,
-.clients-list-icon:focus {
-  fill: #404bbf;
+  fill: currentColor;
 }
 
 .clients {
@@ -399,6 +409,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
+  align-items: baseline;
 }
 
 .last-section {
@@ -411,15 +422,27 @@ body {
   margin-right: 120px;
 }
 
+.social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
 .text-color-white {
   width: 264px;
   color: #f4f4fd;
 }
 
+.social-list-icon {
+  fill: #f4f4fd;
+}
+
 .social-list-footer {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
 }
 
 .social-list-link-footer {
@@ -511,11 +534,14 @@ body {
   padding-right: 16px;
   padding-left: 16px;
 }
+.project-card-link {
+  display: block;
+}
 
-.offer-card:focus,
-.offer-card:hover {
-  background: #ffffff;
-  border: 1px solid #f4f4fd;
+.project-card-link:focus,
+.project-card-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
