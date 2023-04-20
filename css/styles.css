@@ -373,11 +373,12 @@ body {
   width: 100%;
   height: 100%;
   color: #8e8f99;
+  cursor: pointer;
 }
 
 .clients-list-cards:hover,
 .clients-list-cards:focus {
-  border: 1px solid #404bbf;
+  border-color: #404bbf;
   color: #404bbf;
 }
 
@@ -389,13 +390,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-}
-
-.clients-list-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 
 /*============== /CUSTOMERS=============*/
