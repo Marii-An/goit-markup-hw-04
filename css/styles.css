@@ -222,8 +222,6 @@ body {
 }
 
 .hero {
-  display: block;
-  align-items: center;
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -234,13 +232,13 @@ body {
     url(../images/hero/background-hero.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
+  max-width: 1440px;
 }
 
 .hero-container {
   display: block;
   align-items: center;
-  max-width: 1440px;
-  background-size: cover;
 }
 
 /*====================== /HERO =========*/
